@@ -1,7 +1,18 @@
 import React from 'react'
 import NavBar from './NavBar'
 
-function RSVP() {
+function RSVP({guests, searchResult, setSearchResult}) {
+  function handleSearch(e) {
+    if (e.target.value != "") {
+      fetch('http://localhost:9292/guest/' + e.target.value)
+        .then(r => r.json())
+        .then(result => setSearchResult(result))
+    }
+      
+
+    // setSearchTerm(e.target.value)
+  }
+
   return (
     <div style={{
         backgroundImage: `url(${process.env.PUBLIC_URL + "/images/background.jpg"})`, 
@@ -40,10 +51,17 @@ function RSVP() {
         <br></br>
         <div className='ui fluid center aligned search'>
           <div className="ui icon input">
-            <input className="prompt" type="text" placeholder="Name"/>
+            <input 
+              className="prompt" 
+              type="text" 
+              placeholder="Name"
+              // value={searchTerm}
+              onChange={(e) => handleSearch(e)}
+            />
             <i className="search icon"></i>
           </div>
-          <div className="results"></div>
+          {/* <div className="results">{guests}</div> */}
+          <li>{searchResult.length > 0 ? searchResult[0].name : ""}</li>
         </div>
       </div>
 
