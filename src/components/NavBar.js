@@ -1,32 +1,30 @@
 import React from 'react'
 import { NavLink } from "react-router-dom";
-// import { FiHome, FiInfo, FiPlusSquare } from "react-icons/fi";
 
 function NavBar() {
   return (
-    <div>NavBar
-        <NavLink
-            to="/"
+    <div>
+      <NavLink
+            to="/rsvp"
             exact
-            className="active item"
-            activeStyle={{
-                background: "#E6E6E8",
-            }}
-        >
-            {/* <FiHome />  */}
-            Home
-        </NavLink>
-        <NavBar
-            to="/AddRecipe"
-            exact
-            className="item"
+            className="ui right floated button"
             activeStyle={{
               background: "#E6E6E8",
             }}
         >
-            {/* <FiInfo />  */}
             RSVP
-        </NavBar>
+        </NavLink>
+        <NavLink
+            to="/"
+            exact
+            className="ui right floated button"
+            activeStyle={{
+                background: "#E6E6E8",
+            }}
+        >
+            Home
+        </NavLink>
+        
     </div>
   )
 }
