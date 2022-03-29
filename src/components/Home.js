@@ -1,10 +1,11 @@
 import React from 'react'
-import NavBar from './NavBar'
 
 function Home() {
 
   return (
-    <div style={{
+   
+    <div 
+    style={{
         backgroundImage: `url(${process.env.PUBLIC_URL + "/images/background.jpg"})`, 
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
@@ -12,7 +13,6 @@ function Home() {
         width: '100vw',
         height: '100vh'
       }}>
-      <NavBar />
       
         <br></br>
         <br></br>

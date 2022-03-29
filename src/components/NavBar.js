@@ -4,6 +4,16 @@ import { NavLink } from "react-router-dom";
 function NavBar() {
   return (
     <div>
+        <NavLink
+            to="/pictures"
+            exact
+            className="ui right floated button"
+            activeStyle={{
+              background: "#E6E6E8",
+            }}
+        >
+            Pictures
+        </NavLink>
       <NavLink
             to="/rsvp"
             exact
