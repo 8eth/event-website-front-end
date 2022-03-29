@@ -1,7 +1,8 @@
 import React from 'react'
 import PicturesCard from './PicturesCard'
+import AddPictures from './AddPictures'
 
-function PicturesList({pictures}) {
+function PicturesList({pictures, handleNewPicture}) {
     const mappedPictures = pictures.map((picture) => 
         <PicturesCard
             key={picture.id}
@@ -11,36 +12,32 @@ function PicturesList({pictures}) {
 
 
   return (
-    <div style={{
-        backgroundImage: `url(${process.env.PUBLIC_URL + "/images/background.jpg"})`, 
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
-        backgroundSize: 'cover',
-        width: '100vw',
-        height: '100vh'
-      }}>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
+    <div className="picture-page-background"> 
         <br></br>
         <br></br>
         <br></br>
         <br></br>
 
-        <div className="ui  center aligned grid container">
-            {mappedPictures}
-              
+        <AddPictures 
+            handleNewPicture={handleNewPicture}
+        />
+      
+
+        <div className='form-border ui center aligned grid container'>
+            <br></br>
+            <h3>Here are some pictures from the party!</h3>
+            <br></br>
         </div>
 
+        <br></br>
+        <br></br>
+        <div className="form-border ui center aligned grid container">
+            {mappedPictures}
+        </div>
 
+        <br></br>
+
+        
       </div>
   )
 }

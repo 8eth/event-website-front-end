@@ -5,7 +5,7 @@ function Home() {
   return (
    
     <div 
-    style={{
+      style={{
         backgroundImage: `url(${process.env.PUBLIC_URL + "/images/background.jpg"})`, 
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',

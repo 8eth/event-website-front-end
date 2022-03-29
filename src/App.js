@@ -27,6 +27,9 @@ function App() {
       // .then(console.log)
   }, [])
 
+  function handleNewPicture(newPicture) {
+    setPictures([...pictures, newPicture])
+  }
 
   // guests.filter(guest => console.log(guest.name))
 
@@ -52,6 +55,7 @@ function App() {
           <Route path="/pictures">
             <PicturesList
               pictures={pictures}
+              handleNewPicture={handleNewPicture}
             />
           </Route>
         </Switch>
