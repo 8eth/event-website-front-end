@@ -82,7 +82,7 @@ function AddPictures({handleNewPicture}) {
               </label>
               <input
                 type="text"
-                name="image_url"
+                name="img_link"
                 value={pictureInfo.img_link}
                 id={FormData.img_link}
                 onChange={(e) => handleChange(e)}

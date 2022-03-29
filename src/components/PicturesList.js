@@ -31,7 +31,7 @@ function PicturesList({pictures, handleNewPicture}) {
 
         <br></br>
         <br></br>
-        <div className="form-border ui center aligned grid container">
+        <div className="form-border ui center aligned five row grid container">
             {mappedPictures}
         </div>
 

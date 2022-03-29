@@ -4,11 +4,13 @@ function PicturesCard({picture}) {
   return (
   
         
-        <div className='center aligned card'>
+        <div className='center aligned cards'>
           <br></br>
+          <div className='ui card'>
             <img src={picture.img_link} alt={picture.caption}/>
             <h4>{picture.caption}</h4>
-            <br></br>
+          </div>
+          <br></br>
         </div>
         
    
