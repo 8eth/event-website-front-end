@@ -7,31 +7,32 @@ import RSVP from './components/RSVP';
 import PicturesList from './components/PicturesList';
 
 function App() {
+  const [parties, setParties] = useState([])
   const [guests, setGuests] = useState([])
   const [pictures, setPictures] = useState([])
   const [searchTerm, setSearchTerm] = useState("")
 
-  // const [searchResult, setSearchResult] = useState("")
+  useEffect(() => {
+    fetch('http://localhost:9292/')
+      .then(response => response.json())
+      .then(parties => setParties(parties));
+  }, [])
 
   useEffect(() => {
     fetch('http://localhost:9292/guests')
       .then(response => response.json())
       .then(guests => setGuests(guests));
-      // .then(console.log)
   }, [])
 
   useEffect(() => {
     fetch('http://localhost:9292/pictures')
       .then(response => response.json())
       .then(pictures => setPictures(pictures));
-      // .then(console.log)
   }, [])
 
   function handleNewPicture(newPicture) {
     setPictures([...pictures, newPicture])
   }
-
-  // guests.filter(guest => console.log(guest.name))
 
   return (
  
@@ -39,17 +40,16 @@ function App() {
       <NavBar />
         <Switch>
           <Route exact path='/' >
-            <Home />
+            <Home 
+              parties={parties}
+            />
           </Route>
           <Route path="/rsvp">
             <RSVP 
               guests={guests}
-              // searchResult={searchResult}
-              // setSearchResult={setSearchResult}
               searchTerm={searchTerm}
               setSearchTerm={setSearchTerm}
               setGuests={setGuests}
-              // searchedGuest={searchedGuest}
             />
           </Route>
           <Route path="/pictures">

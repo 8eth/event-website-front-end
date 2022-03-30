@@ -1,7 +1,6 @@
 import React, {useState, useEffect, useRef} from 'react'
 import { useHistory } from "react-router-dom";
 
-
 function AddPictures({handleNewPicture}) {
   let history = useHistory();
 
@@ -55,7 +54,7 @@ function AddPictures({handleNewPicture}) {
   return (
     <div className="indent">
       <br></br>
-      <h3 className="form-border center-content">Do you have pictures from the event you want to share with us?</h3>
+      <h3 className="center-content">Do you have pictures from the event you want to share with us?</h3>
       <div className="form-border center-content">
         <div className="ui grid">
           <form
@@ -92,10 +91,11 @@ function AddPictures({handleNewPicture}) {
             <button className="ui submit button center" type="submit">
               Add Picture
             </button>
+            <br></br>
+            <br></br>
           </form>
         </div>
       </div>
-      <br></br>
     </div>
   )
 }

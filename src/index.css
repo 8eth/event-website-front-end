@@ -1,17 +1,3 @@
-/* body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
-
 .indent {
   margin: 0% 8% 0% 8%;
   text-align: center;
@@ -27,15 +13,30 @@ code {
 .form-border {
   margin: 20px;
   padding: 20px;
-  border-style: solid;
+  border-style: dotted;
   border-color: lightgray;
-  background-color: rgb(255, 241, 244);
 }
 
 .center {
   text-align: center;
 }
 
+/* .background {
+  background-image: url("../public/images/background.jpg");
+  background-repeat: 'no-repeat';
+  background-position: 'center';
+  background-size: 'cover';
+  width: '100vw';
+  height: '100vh';
+} */
+
 .picture-page-background {
-  background: rgb(255, 254, 254);
+  background: rgb(250, 243, 230);
+}
+
+.center-page {
+  margin-left: 210px;
+  margin-top: 150px;
+  width: 50%;
+  padding: 100px;
 }

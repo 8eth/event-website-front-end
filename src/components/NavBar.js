@@ -12,9 +12,10 @@ function NavBar() {
               background: "#E6E6E8",
             }}
         >
-            Pictures
+          Pictures
         </NavLink>
-      <NavLink
+
+        <NavLink
             to="/rsvp"
             exact
             className="ui right floated button"
@@ -22,8 +23,9 @@ function NavBar() {
               background: "#E6E6E8",
             }}
         >
-            RSVP
+          RSVP
         </NavLink>
+
         <NavLink
             to="/"
             exact
@@ -32,9 +34,8 @@ function NavBar() {
                 background: "#E6E6E8",
             }}
         >
-            Home
+          Home
         </NavLink>
-        
     </div>
   )
 }
