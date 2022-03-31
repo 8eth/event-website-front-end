@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# Event Website 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This application shows the guest view of an event website. It has 
+    * a home page with event details, 
+    * an RSVP page with a form that allows guests to accept or decline invitation,
+    * and a Pictures page that has pictures from the event and also allows guests to share their pictures of the party with the host.
 
-## Available Scripts
+All of the above is persisted on the backend.
 
-In the project directory, you can run:
+## Front End 
 
-### `npm start`
+The front-end of the website is built using React.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+https://github.com/8eth/event-website-front-end
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Front End Components](./public/images/Components.png)
 
-### `npm test`
+## Back End (Data Storage)
+The back-end of the website is built using Ruby, Sinatra, and ActiveRecord.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+https://github.com/8eth/event-website-back-end
+![Back End ERD](./public/images/ERD.png)
 
-### `npm run build`
+## User Stories
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The application allows the user to 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    * view party detail
+    * search for their name from the guest list,
+    * accept or decline invitation,
+    * add pictures from the party on the pictures page
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Home page](./public/images/home.png)
+![RSVP page](./public/images/RSVP.png)
+![RSVP Form](./public/images/RSVPForm.png)
+![Pictures page](./public/images/AddPictures.png)
 
-### `npm run eject`
+## Styling
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+This application uses semantic UI and some css code for styling.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Author
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Beth Fekadu: https://github.com/8eth
