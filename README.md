@@ -31,8 +31,11 @@ The application allows the user to
     * add pictures from the party on the pictures page
 
 ![Home page](./public/images/home.png)
+
 ![RSVP page](./public/images/RSVP.png)
+
 ![RSVP Form](./public/images/RSVPForm.png)
+
 ![Pictures page](./public/images/AddPictures.png)
 
 ## Styling
