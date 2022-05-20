@@ -1,9 +1,9 @@
 # Event Website 
 
 This application shows the guest view of an event website. It has 
-    * a home page with event details, 
-    * an RSVP page with a form that allows guests to accept or decline invitation,
-    * and a Pictures page that has pictures from the event and also allows guests to share their pictures of the party with the host.
+* a home page with event details, 
+* an RSVP page with a form that allows guests to accept or decline invitation,
+* and a Pictures page that has pictures from the event and also allows guests to share their pictures of the party with the host.
 
 All of the above is persisted on the backend.
 
